@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>AlterLexis — Privacy, Terms, Support</title>
+    <style>
+      :root { --max: 920px; --pad: 18px; --radius: 14px; }
+      body { margin: 0; font: 16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+      header { padding: 28px var(--pad); border-bottom: 1px solid rgba(127,127,127,.25); }
+      main { max-width: var(--max); margin: 0 auto; padding: 24px var(--pad) 60px; }
+      h1 { margin: 0 0 6px; font-size: 28px; }
+      .sub { margin: 0; opacity: .75; }
+      nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+      nav a { display: inline-block; padding: 10px 12px; border: 1px solid rgba(127,127,127,.25); border-radius: 999px; text-decoration: none; color: inherit; }
+      .bar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+      select { padding: 10px 12px; border-radius: 10px; border: 1px solid rgba(127,127,127,.35); background: transparent; color: inherit; }
+      section { margin-top: 22px; padding: 18px; border: 1px solid rgba(127,127,127,.25); border-radius: var(--radius); }
+      section > h2 { margin: 0 0 10px; font-size: 20px; }
+      .lang { display: none; }
+      .lang.active { display: block; }
+      .muted { opacity: .75; }
+      .note { padding: 12px; border-left: 4px solid rgba(127,127,127,.4); background: rgba(127,127,127,.08); border-radius: 10px; }
+      code { font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace; font-size: .95em; }
+      a { color: inherit; }
+      ul { margin: 10px 0 0 18px; }
+      footer { margin-top: 26px; opacity: .75; font-size: 13px; }
+      h3 { margin: 16px 0 8px; font-size: 16px; }
+      html[dir="rtl"] body { direction: rtl; }
+      html[dir="rtl"] nav { justify-content: flex-end; }
+      html[dir="rtl"] ul { padding-left: 0; padding-right: 18px; }
+      html[dir="rtl"] .lang { text-align: right; }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div style="max-width: 920px; margin: 0 auto;">
+        <h1>AlterLexis</h1>
+        <p class="sub">Privacy Policy • Terms of Use • Support</p>
+
+        <div class="bar">
+          <label for="langSelect" class="muted">Language:</label>
+          <select id="langSelect" aria-label="Language selector">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Português</option>
+            <option value="ru">Русский</option>
+            <option value="ja">日本語</option>
+            <option value="zh-Hans">简体中文</option>
+            <option value="ar">العربية</option>
+          </select>
+        </div>
+
+        <nav aria-label="Document navigation">
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+          <a href="#support">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="note">
+        <div class="lang" data-lang="en">Single page for Privacy/Terms/Support. Use anchors: <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="fr">Page unique pour Confidentialité/Conditions/Support. Utilise les ancres : <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="es">Página única para Privacidad/Términos/Soporte. Usa las anclas: <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="de">Eine Seite für Datenschutz/AGB/Support. Verwende die Anker: <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="it">Pagina unica per Privacy/Termini/Supporto. Usa gli ancoraggi: <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="pt">Página única para Privacidade/Termos/Suporte. Use as âncoras: <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="ru">Единая страница для Privacy/Terms/Support. Используйте якоря: <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="ja">プライバシー/利用規約/サポートの単一ページ。アンカー: <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+        <div class="lang" data-lang="zh-Hans">单页用于隐私/条款/支持。使用锚点：<code>#privacy</code>, <code>#terms</code>, <code>#support</code>。</div>
+        <div class="lang" data-lang="ar">صفحة واحدة للخصوصية/الشروط/الدعم. استخدم الروابط: <code>#privacy</code>, <code>#terms</code>, <code>#support</code>.</div>
+      </div>
+
+      <section id="privacy">
+        <h2>Privacy Policy</h2>
+
+        <div class="lang" data-lang="en">
+          <p class="muted">Effective date: 2025-12-27</p>
+          <p>
+            This Privacy Policy explains how <strong>AlterLexis</strong> (the “App”) handles information. AlterLexis is an offline word game designed to keep data on your device.
+          </p>
+          <ul>
+            <li>On-device data: progress, preferences, statistics and word database (SQLite/UserDefaults).</li>
+            <li>Purchases/subscriptions are processed by Apple (StoreKit). We do not access payment details.</li>
+            <li>Game Center is optional and managed by Apple (identity, leaderboards).</li>
+            <li>No ads, no analytics, no third-party trackers.</li>
+          </ul>
+          <p>Contact: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="fr">
+          <p class="muted">Date d’effet : 2025-12-27</p>
+          <p>
+            Cette politique de confidentialité explique comment <strong>AlterLexis</strong> (l’« app ») traite les informations. AlterLexis est un jeu de mots hors ligne conçu pour garder les données sur ton appareil.
+          </p>
+          <ul>
+            <li>Données locales : progression, préférences, statistiques et base de mots (SQLite/UserDefaults).</li>
+            <li>Achats/abonnements gérés par Apple (StoreKit). Nous n’avons pas accès aux données de paiement.</li>
+            <li>Game Center est optionnel et géré par Apple (identité, classements).</li>
+            <li>Aucune pub, aucun analytics, aucun tracker tiers.</li>
+          </ul>
+          <p>Contact : <a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="es">
+          <p class="muted">Fecha de vigencia: 2025-12-27</p>
+          <p>
+            Esta Política de privacidad explica cómo <strong>AlterLexis</strong> (la “app”) trata la información. AlterLexis es un juego de palabras sin conexión diseñado para mantener los datos en tu dispositivo.
+          </p>
+          <ul>
+            <li>Datos en el dispositivo: progreso, preferencias, estadísticas y base de palabras (SQLite/UserDefaults).</li>
+            <li>Compras/suscripciones gestionadas por Apple (StoreKit). No accedemos a datos de pago.</li>
+            <li>Game Center es opcional y gestionado por Apple (identidad, clasificaciones).</li>
+            <li>Sin anuncios, sin analíticas, sin rastreadores de terceros.</li>
+          </ul>
+          <p>Contacto: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="de">
+          <p class="muted">Gültig ab: 2025-12-27</p>
+          <p>
+            Diese Datenschutzerklärung erklärt, wie <strong>AlterLexis</strong> (die „App“) Informationen verarbeitet. AlterLexis ist ein Offline-Wortspiel, das Daten auf deinem Gerät belässt.
+          </p>
+          <ul>
+            <li>Gerätedaten: Fortschritt, Einstellungen, Statistiken und Wortdatenbank (SQLite/UserDefaults).</li>
+            <li>Käufe/Abos werden von Apple (StoreKit) verarbeitet. Wir erhalten keine Zahlungsdaten.</li>
+            <li>Game Center ist optional und wird von Apple verwaltet (Identität, Bestenlisten).</li>
+            <li>Keine Werbung, keine Analytics, keine Drittanbieter-Tracker.</li>
+          </ul>
+          <p>Kontakt: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="it">
+          <p class="muted">Data di efficacia: 2025-12-27</p>
+          <p>
+            Questa Informativa sulla privacy spiega come <strong>AlterLexis</strong> (l’“app”) gestisce le informazioni. AlterLexis è un gioco di parole offline progettato per mantenere i dati sul dispositivo.
+          </p>
+          <ul>
+            <li>Dati sul dispositivo: progressi, preferenze, statistiche e database di parole (SQLite/UserDefaults).</li>
+            <li>Acquisti/abbonamenti gestiti da Apple (StoreKit). Non accediamo ai dati di pagamento.</li>
+            <li>Game Center è opzionale e gestito da Apple (identità, classifiche).</li>
+            <li>Nessuna pubblicità, nessuna analisi, nessun tracker di terze parti.</li>
+          </ul>
+          <p>Contatto: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="pt">
+          <p class="muted">Data de vigência: 2025-12-27</p>
+          <p>
+            Esta Política de Privacidade explica como o <strong>AlterLexis</strong> (o “app”) trata as informações. AlterLexis é um jogo de palavras offline pensado para manter os dados no seu dispositivo.
+          </p>
+          <ul>
+            <li>Dados no dispositivo: progresso, preferências, estatísticas e base de palavras (SQLite/UserDefaults).</li>
+            <li>Compras/assinaturas geridas pela Apple (StoreKit). Não acessamos dados de pagamento.</li>
+            <li>Game Center é opcional e gerido pela Apple (identidade, rankings).</li>
+            <li>Sem anúncios, sem analytics, sem rastreadores de terceiros.</li>
+          </ul>
+          <p>Contato: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="ru">
+          <p class="muted">Дата вступления в силу: 2025-12-27</p>
+          <p>
+            Эта политика конфиденциальности объясняет, как <strong>AlterLexis</strong> (приложение) обрабатывает информацию. AlterLexis — офлайн‑игра со словами, данные хранятся на вашем устройстве.
+          </p>
+          <ul>
+            <li>Данные на устройстве: прогресс, настройки, статистика и база слов (SQLite/UserDefaults).</li>
+            <li>Покупки/подписки обрабатываются Apple (StoreKit). Мы не получаем платежные данные.</li>
+            <li>Game Center опционален и управляется Apple (идентификация, таблицы лидеров).</li>
+            <li>Нет рекламы, нет аналитики, нет сторонних трекеров.</li>
+          </ul>
+          <p>Контакт: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="ja">
+          <p class="muted">施行日：2025-12-27</p>
+          <p>
+            本プライバシーポリシーは、<strong>AlterLexis</strong>（本アプリ）が情報をどのように扱うかを説明します。AlterLexis はオフラインの単語ゲームで、データは端末内に保存されます。
+          </p>
+          <ul>
+            <li>端末内データ：進行状況、設定、統計、単語データベース（SQLite/UserDefaults）。</li>
+            <li>購入/サブスクリプションは Apple（StoreKit）が処理。支払い情報にはアクセスしません。</li>
+            <li>Game Center は任意で、Apple が管理（ID、ランキング）。</li>
+            <li>広告なし、解析なし、第三者トラッカーなし。</li>
+          </ul>
+          <p>連絡先：<a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="zh-Hans">
+          <p class="muted">生效日期：2025-12-27</p>
+          <p>
+            本隐私政策说明 <strong>AlterLexis</strong>（“本应用”）如何处理信息。AlterLexis 是离线文字游戏，数据保存在你的设备上。
+          </p>
+          <ul>
+            <li>设备内数据：进度、偏好设置、统计数据、词库（SQLite/UserDefaults）。</li>
+            <li>购买/订阅由 Apple（StoreKit）处理。我们不获取支付信息。</li>
+            <li>Game Center 可选，由 Apple 管理（身份、排行榜）。</li>
+            <li>无广告、无分析、无第三方跟踪。</li>
+          </ul>
+          <p>联系方式：<a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+
+        <div class="lang" data-lang="ar">
+          <p class="muted">تاريخ السريان: 2025-12-27</p>
+          <p>
+            توضح سياسة الخصوصية هذه كيفية تعامل <strong>AlterLexis</strong> (التطبيق) مع المعلومات. AlterLexis لعبة كلمات دون اتصال، وتبقى البيانات على جهازك.
+          </p>
+          <ul>
+            <li>بيانات على الجهاز: التقدم، التفضيلات، الإحصاءات، قاعدة الكلمات (SQLite/UserDefaults).</li>
+            <li>تتم المشتريات/الاشتراكات عبر Apple (StoreKit). لا نصل إلى بيانات الدفع.</li>
+            <li>Game Center اختياري وتديره Apple (الهوية، لوحات الصدارة).</li>
+            <li>بدون إعلانات، بدون تحليلات، بدون أدوات تتبع خارجية.</li>
+          </ul>
+          <p>للتواصل: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+      </section>
+
+      <section id="terms">
+        <h2>Terms of Use</h2>
+
+        <div class="lang" data-lang="en">
+          <p class="muted">Effective date: 2025-12-27</p>
+          <p>By using AlterLexis, you agree to the Apple Standard EULA and the terms below.</p>
+          <ul>
+            <li>Auto‑renewable subscriptions: monthly <code>com.alterlexis.plus.monthly</code> and annual <code>com.alterlexis.plus.annual</code>.</li>
+            <li>No free trial for v1.</li>
+            <li>Price is shown in-app and may vary by country/currency.</li>
+            <li>Manage or cancel in iOS Settings → Apple ID → Subscriptions; cancel at least 24 hours before renewal.</li>
+          </ul>
+          <p>Apple Standard EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="fr">
+          <p class="muted">Date d’effet : 2025-12-27</p>
+          <p>En utilisant AlterLexis, vous acceptez la licence standard Apple (EULA) et les conditions ci‑dessous.</p>
+          <ul>
+            <li>Abonnements auto‑renouvelables : mensuel <code>com.alterlexis.plus.monthly</code> et annuel <code>com.alterlexis.plus.annual</code>.</li>
+            <li>Pas d’essai gratuit pour la v1.</li>
+            <li>Le prix est affiché dans l’app et peut varier selon le pays/la monnaie.</li>
+            <li>Gestion/annulation via Réglages iOS → Identifiant Apple → Abonnements, au moins 24 h avant le renouvellement.</li>
+          </ul>
+          <p>Licence Apple : <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="es">
+          <p class="muted">Fecha de vigencia: 2025-12-27</p>
+          <p>Al usar AlterLexis, aceptas el EULA estándar de Apple y las condiciones siguientes.</p>
+          <ul>
+            <li>Suscripciones auto‑renovables: mensual <code>com.alterlexis.plus.monthly</code> y anual <code>com.alterlexis.plus.annual</code>.</li>
+            <li>Sin prueba gratuita en la v1.</li>
+            <li>El precio se muestra en la app y puede variar por país/moneda.</li>
+            <li>Gestiona o cancela en Ajustes de iOS → Apple ID → Suscripciones, al menos 24 h antes de la renovación.</li>
+          </ul>
+          <p>EULA de Apple: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="de">
+          <p class="muted">Gültig ab: 2025-12-27</p>
+          <p>Durch die Nutzung von AlterLexis stimmen Sie der Apple Standard‑EULA und den folgenden Bedingungen zu.</p>
+          <ul>
+            <li>Automatisch verlängernde Abos: monatlich <code>com.alterlexis.plus.monthly</code> und jährlich <code>com.alterlexis.plus.annual</code>.</li>
+            <li>Kein kostenloser Testzeitraum für v1.</li>
+            <li>Preis wird in der App angezeigt und kann je nach Land/Währung variieren.</li>
+            <li>Verwalten oder kündigen in iOS Einstellungen → Apple ID → Abonnements, mindestens 24 Std. vor Verlängerung.</li>
+          </ul>
+          <p>Apple EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="it">
+          <p class="muted">Data di efficacia: 2025-12-27</p>
+          <p>Utilizzando AlterLexis, accetti il contratto EULA standard Apple e i termini di seguito.</p>
+          <ul>
+            <li>Abbonamenti con rinnovo automatico: mensile <code>com.alterlexis.plus.monthly</code> e annuale <code>com.alterlexis.plus.annual</code>.</li>
+            <li>Nessuna prova gratuita per la v1.</li>
+            <li>Il prezzo è mostrato nell’app e può variare per paese/valuta.</li>
+            <li>Gestisci o annulla in Impostazioni iOS → ID Apple → Abbonamenti, almeno 24 ore prima del rinnovo.</li>
+          </ul>
+          <p>EULA Apple: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="pt">
+          <p class="muted">Data de vigência: 2025-12-27</p>
+          <p>Ao usar o AlterLexis, você aceita o EULA padrão da Apple e os termos abaixo.</p>
+          <ul>
+            <li>Assinaturas com renovação automática: mensal <code>com.alterlexis.plus.monthly</code> e anual <code>com.alterlexis.plus.annual</code>.</li>
+            <li>Sem teste gratuito na v1.</li>
+            <li>O preço é exibido no app e pode variar por país/moeda.</li>
+            <li>Gerencie ou cancele em Ajustes do iOS → Apple ID → Assinaturas, pelo menos 24 h antes da renovação.</li>
+          </ul>
+          <p>EULA da Apple: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="ru">
+          <p class="muted">Дата вступления в силу: 2025-12-27</p>
+          <p>Используя AlterLexis, вы принимаете стандартный EULA Apple и условия ниже.</p>
+          <ul>
+            <li>Авто‑продлеваемые подписки: месячная <code>com.alterlexis.plus.monthly</code> и годовая <code>com.alterlexis.plus.annual</code>.</li>
+            <li>Бесплатного пробного периода для v1 нет.</li>
+            <li>Цена отображается в приложении и может отличаться по стране/валюте.</li>
+            <li>Управление/отмена: Настройки iOS → Apple ID → Подписки, минимум за 24 часа до продления.</li>
+          </ul>
+          <p>Apple EULA: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="ja">
+          <p class="muted">施行日：2025-12-27</p>
+          <p>AlterLexis を利用することで、Apple の標準EULAおよび以下の条件に同意したものとみなされます。</p>
+          <ul>
+            <li>自動更新サブスクリプション：月額 <code>com.alterlexis.plus.monthly</code>、年額 <code>com.alterlexis.plus.annual</code>。</li>
+            <li>v1 には無料トライアルはありません。</li>
+            <li>価格はアプリ内に表示され、国/通貨により異なる場合があります。</li>
+            <li>管理/解約は iOS 設定 → Apple ID → サブスクリプションから、更新の24時間以上前に行ってください。</li>
+          </ul>
+          <p>Apple 標準EULA：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="zh-Hans">
+          <p class="muted">生效日期：2025-12-27</p>
+          <p>使用 AlterLexis 即表示你同意 Apple 标准 EULA 及以下条款。</p>
+          <ul>
+            <li>自动续订订阅：月度 <code>com.alterlexis.plus.monthly</code>，年度 <code>com.alterlexis.plus.annual</code>。</li>
+            <li>v1 无免费试用。</li>
+            <li>价格在应用内显示，可能因国家/货币而不同。</li>
+            <li>管理或取消：iOS 设置 → Apple ID → 订阅，需在续订前至少 24 小时操作。</li>
+          </ul>
+          <p>Apple 标准 EULA：<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+
+        <div class="lang" data-lang="ar">
+          <p class="muted">تاريخ السريان: 2025-12-27</p>
+          <p>باستخدام AlterLexis، فإنك توافق على اتفاقية ترخيص Apple القياسية (EULA) والشروط أدناه.</p>
+          <ul>
+            <li>اشتراكات متجددة تلقائيًا: شهري <code>com.alterlexis.plus.monthly</code> وسنوي <code>com.alterlexis.plus.annual</code>.</li>
+            <li>لا توجد تجربة مجانية للإصدار v1.</li>
+            <li>يتم عرض السعر داخل التطبيق وقد يختلف حسب البلد/العملة.</li>
+            <li>الإدارة أو الإلغاء عبر إعدادات iOS → Apple ID → الاشتراكات، قبل التجديد بـ 24 ساعة على الأقل.</li>
+          </ul>
+          <p>اتفاقية Apple القياسية: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
+        </div>
+      </section>
+
+      <section id="support">
+        <h2>Support</h2>
+
+        <div class="lang" data-lang="en">
+          <p>Support and legal questions: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a>.</p>
+        </div>
+        <div class="lang" data-lang="fr">
+          <p>Support et questions légales : <a href="mailto:support@alterlexis.app">support@alterlexis.app</a>.</p>
+        </div>
+        <div class="lang" data-lang="es">
+          <p>Soporte y cuestiones legales: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a>.</p>
+        </div>
+        <div class="lang" data-lang="de">
+          <p>Support und rechtliche Anfragen: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a>.</p>
+        </div>
+        <div class="lang" data-lang="it">
+          <p>Supporto e questioni legali: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a>.</p>
+        </div>
+        <div class="lang" data-lang="pt">
+          <p>Suporte e questões legais: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a>.</p>
+        </div>
+        <div class="lang" data-lang="ru">
+          <p>Поддержка и юридические вопросы: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a>.</p>
+        </div>
+        <div class="lang" data-lang="ja">
+          <p>サポート／法的なお問い合わせ：<a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+        <div class="lang" data-lang="zh-Hans">
+          <p>支持与法律问题：<a href="mailto:support@alterlexis.app">support@alterlexis.app</a></p>
+        </div>
+        <div class="lang" data-lang="ar">
+          <p>الدعم والأسئلة القانونية: <a href="mailto:support@alterlexis.app">support@alterlexis.app</a>.</p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="lang" data-lang="en">AlterLexis — v1.0 • Updated 2025-12-27</div>
+        <div class="lang" data-lang="fr">AlterLexis — v1.0 • Mise à jour 2025-12-27</div>
+        <div class="lang" data-lang="es">AlterLexis — v1.0 • Actualizado 2025-12-27</div>
+        <div class="lang" data-lang="de">AlterLexis — v1.0 • Aktualisiert 2025-12-27</div>
+        <div class="lang" data-lang="it">AlterLexis — v1.0 • Aggiornato 2025-12-27</div>
+        <div class="lang" data-lang="pt">AlterLexis — v1.0 • Atualizado em 2025-12-27</div>
+        <div class="lang" data-lang="ru">AlterLexis — v1.0 • Обновлено 2025-12-27</div>
+        <div class="lang" data-lang="ja">AlterLexis — v1.0 • 更新日 2025-12-27</div>
+        <div class="lang" data-lang="zh-Hans">AlterLexis — v1.0 • 更新于 2025-12-27</div>
+        <div class="lang" data-lang="ar">AlterLexis — v1.0 • آخر تحديث 2025-12-27</div>
+      </footer>
+    </main>
+
+    <script>
+      (function () {
+        const supported = ["en", "fr", "es", "de", "it", "pt", "ru", "ja", "zh-Hans", "ar"];
+        const defaultLang = "fr";
+
+        const select = document.getElementById("langSelect");
+        const nodes = Array.from(document.querySelectorAll(".lang"));
+
+        function normalizeLang(value) {
+          if (!value) return null;
+          const lower = value.toLowerCase();
+          if (lower.startsWith("zh")) return "zh-Hans";
+          if (lower.startsWith("pt")) return "pt";
+          if (lower.startsWith("es")) return "es";
+          if (lower.startsWith("de")) return "de";
+          if (lower.startsWith("it")) return "it";
+          if (lower.startsWith("ru")) return "ru";
+          if (lower.startsWith("ja")) return "ja";
+          if (lower.startsWith("ar")) return "ar";
+          if (lower.startsWith("fr")) return "fr";
+          if (lower.startsWith("en")) return "en";
+          return null;
+        }
+
+        function setLang(lang) {
+          const chosen = supported.includes(lang) ? lang : defaultLang;
+          document.documentElement.lang = chosen;
+          document.documentElement.dir = chosen === "ar" ? "rtl" : "ltr";
+          select.value = chosen;
+          nodes.forEach((node) => {
+            node.classList.toggle("active", node.dataset.lang === chosen);
+          });
+        }
+
+        const urlLang = new URLSearchParams(window.location.search).get("lang");
+        const browserLang = normalizeLang(navigator.language || "");
+        setLang(normalizeLang(urlLang) || browserLang || defaultLang);
+
+        select.addEventListener("change", (event) => {
+          const next = event.target.value;
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", next);
+          window.history.replaceState({}, "", url.toString());
+          setLang(next);
+        });
+      })();
+    </script>
+  </body>
+</html>
